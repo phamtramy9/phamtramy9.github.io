@@ -1,0 +1,48 @@
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color : #fff;
+}
+.container {
+    width: 75%;
+    display: flex;
+}
+aside {
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top : 0;
+    left: 0;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+main {
+    margin-left: 300px;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+    color: #333;
+    line-height: 1.6; 
+}
+nav#topmenu {
+     background-color: #444;
+    padding: 10px;
+}
+
+nav#topmenu li {
+    margin-right: 0 15px;
+}
+nav#topmenu a {
+font-weight: bold;
+text-decoration: none;
+color: #fff;
+}
