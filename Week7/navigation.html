@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        #header {
+            background: url(Images/header.jpg);
+            height:181px;
+            width: 900px;
+            margin-left: 20%;
+            margin-right: 25%;
+        }
+
+        #logo {
+            padding: 20px 0 0 50px;
+        }
+        #menu_top {
+            margin-top: 55px;
+            margin-left: 30px;
+            background: #fff;
+            height: 40px;
+            opacity: 0.6;
+            border-radius: 10px 0px 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .level1 {
+            list-style-type: none;
+            padding-top: 12px;
+        }
+        .level1 li {
+            display: inline;
+            float: left;
+            height: 27px;
+            padding : 0 20px 0px 0px;
+            font-weight:bold ;
+        }
+        .level1 li a,
+        .level1 li a:visited {
+            text-decoration: none;
+            color: rgb(222, 88, 88);
+        }
+        .level1 li a:hover {
+            color:cornflowerblue;
+        }
+        .level2 {
+            display: none;
+            position: absolute;
+            padding: 0px;
+            margin-top: 5px;
+        }
+        .level1 li:hover>.level2 {
+            display: block;
+        }
+        .level2 li {
+            background: #ccc;
+            padding: 9px;
+            position: relative;
+            display: block;
+            height:auto;
+            float: none;
+        }
+        .level2 li:hover {
+            background: rgb(144, 168, 211);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="logo"><img src="Images/logo.gif" width="191" height="66" alt="Flower Shop">
+        </div>
+        <nav id="menu_top">
+            <ul class="level1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gioithieu.html">Introduction</a></li>
+                <li><a href="#">Flower Category</a>
+                    <ul class="level2">
+                        <li> Sun Flower</li>
+                        <li> Rose Flower</li>
+                        <li> Lily Flower</li>
+                        <li> Tulips Flower</li>
+                    </ul>
+                </li>
+                <li><a href="dangky.html">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="lienhe.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
